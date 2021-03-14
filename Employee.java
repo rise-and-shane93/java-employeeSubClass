@@ -1,9 +1,9 @@
 public class Employee {
     // initialize the variables
     private int number;
-    private String name;
-    private String address;
-    private String hireDate;
+    public String name;
+    public String address;
+    public String hireDate;
 
     // Constructor function
     public Employee(int number, String name, String address, String hireDate) {

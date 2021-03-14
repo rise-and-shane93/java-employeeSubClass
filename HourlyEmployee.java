@@ -25,7 +25,10 @@ public class HourlyEmployee extends Employee {
         return result;
     }
 
-    public void displayEarnings() {
-        System.out.println(earnings);
+    public void displayAttributes() {
+        System.out.println(name + "'s earnings is $" + earnings);
+        System.out.println(name + "'s pay rate is $" + payRate + " per hour.");
+        System.out.println(name + " worked " + hoursWorked + " this week.");
     }
+
 }
