@@ -1,15 +1,15 @@
 public class SalariedEmployee extends Employee {
     
-    private double earnings;
+    private double annualSalary;
 
-    public SalariedEmployee(int number, String name, String address, String hireDate, double earnings) {
+    public SalariedEmployee(int number, String name, String address, String hireDate, double annualSalary) {
         super(number, name, address, hireDate);
         
-        this.earnings = earnings;
+        this.annualSalary = annualSalary;
     }
 
-    public void displayAttributes() {
-        System.out.println(name + "'s earnings is " + earnings);
+    public void displaySalary() {
+        System.out.println(name + "'s annual salary is $" + annualSalary + ".");
     }
 
 }

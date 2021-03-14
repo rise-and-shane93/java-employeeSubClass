@@ -1,4 +1,5 @@
 public class HourlyEmployee extends Employee {
+
     private double payRate;
     private double hoursWorked;
     private double earnings;
@@ -25,9 +26,15 @@ public class HourlyEmployee extends Employee {
         return result;
     }
 
-    public void displayAttributes() {
+    public void displayEarnings() {
         System.out.println(name + "'s earnings is $" + earnings);
+    }
+
+    public void displayPayRate() {
         System.out.println(name + "'s pay rate is $" + payRate + " per hour.");
+    }
+
+    public void displayHoursWorked() {
         System.out.println(name + " worked " + hoursWorked + " this week.");
     }
 
