@@ -4,6 +4,7 @@ class SalariedEmployee extends Employee {
 
     // Constructor
     public SalariedEmployee(int number, Name name, Address address, Date hireDate, double annualSalary) {
+        // inherit parent attributes via super function
         super(number, name, address, hireDate);
         
         this.annualSalary = annualSalary;

@@ -4,7 +4,9 @@ class HourlyEmployee extends Employee {
     private double hoursWorked;
     private double earnings;
 
+    // Constructor
     public HourlyEmployee(int number, Name name, Address address, Date hireDate, double payRate, double hoursWorked) {
+        // inherit parent attributes via super function
         super(number, name, address, hireDate);
         
         this.payRate = payRate;
@@ -12,15 +14,18 @@ class HourlyEmployee extends Employee {
         this.earnings = calcEarnings(payRate, hoursWorked);
     }
 
+    // calculate weekly earnings
     public double calcEarnings(double rate, double hours) {
         double result = 0;
 
         if (hours > 40) {
+            // if the employee worked overtime, get the # of OT hours, calc the OT pay, and add to the rest of the weekly pay
             double overtimeHours = hours - 40;
             result += ((rate * 1.5) * overtimeHours);
             result += rate * 40;
         } else {
-            result += rate * 40;
+            // else, calculate the rate by multiplying the number of hours worked by the pay rate
+            result += rate * hours;
         }
         
         return result;

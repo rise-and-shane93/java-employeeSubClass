@@ -14,11 +14,6 @@ class Employee {
         this.hireDate = hireDate;
     }
 
-    // Creates the string to output the employee's information
-    public String toString() {
-        return number + "\n" + name + address + hireDate;
-    }
-
     // output employee number, name, address & hire date
     public void showData() {
         System.out.println("Employee number is: " + number);
