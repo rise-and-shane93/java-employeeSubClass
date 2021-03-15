@@ -1,3 +1,13 @@
+/**
+ * This program shows the concept of inheritance by allowing the programmer to create either
+ * a salaried or hourly employee, input all the necessary data and have the program output
+ * all of the attributes.
+ * 
+ * @author Shane Harper
+ * EN.605.201.84.SP21
+ * Assignment 7 - Employee Records with salary/earnings data
+ */
+
 public class Main {
     public static void main(String[] Args) {
 
