@@ -1,12 +1,12 @@
-public class Employee {
+class Employee {
     // initialize the variables
-    private int number;
-    public String name;
-    public String address;
-    public String hireDate;
+    public int number;
+    public Name name;
+    public Address address;
+    public Date hireDate;
 
     // Constructor function
-    public Employee(int number, String name, String address, String hireDate) {
+    public Employee(int number, Name name, Address address, Date hireDate) {
         // return name.toString() + address.toString() + hireDate.toString();
         this.number = number;
         this.name = name;
@@ -17,5 +17,13 @@ public class Employee {
     // Creates the string to output the employee's information
     public String toString() {
         return number + "\n" + name + address + hireDate;
+    }
+
+    // output employee number, name, address & hire date
+    public void showData() {
+        System.out.println("Employee number is: " + number);
+        System.out.println("Employee name is: " + name);
+        System.out.println("Employee address is: " + address);
+        System.out.println("Employee hire date is: " + hireDate);
     }
 }

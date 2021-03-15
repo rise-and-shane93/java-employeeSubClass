@@ -1,14 +1,17 @@
-public class SalariedEmployee extends Employee {
-    
+class SalariedEmployee extends Employee {
+
     private double annualSalary;
 
-    public SalariedEmployee(int number, String name, String address, String hireDate, double annualSalary) {
+    // Constructor
+    public SalariedEmployee(int number, Name name, Address address, Date hireDate, double annualSalary) {
         super(number, name, address, hireDate);
         
         this.annualSalary = annualSalary;
     }
 
-    public void displaySalary() {
+    // inherit the showData method from parent class and also output annual salary
+    public void showData() {
+        super.showData();
         System.out.println(name + "'s annual salary is $" + annualSalary + ".");
     }
 
